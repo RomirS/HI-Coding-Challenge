@@ -52,7 +52,7 @@ class Schedule extends React.Component {
         return (
             <>
                 <div className="sidenav">
-                    <h1>Monday, January 19th</h1>
+                    <h1 classname="day">Monday, January 19th</h1>
                     {times.map(time => (
                         <Link key={time} className="timeStamp" activeClass="active" to={time} spy={true} smooth={true} duration={200}>
                             {time} pm

@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /* background: rgba(241, 168, 31, 0.322); */
+    /* background: rgba(23, 5, 121, 0.904); */
 }
 
 :root {
@@ -28,17 +28,25 @@ body {
 .main {
     margin-left: var(--offset);
     padding: 20px;
-    border-left: 6px solid rgb(252, 184, 57);
-    box-shadow: 0 20px 40px rgba(252, 184, 57, 0.5);
+    border-left: 6px solid rgba(252, 184, 57, 0.774);
+    /* box-shadow: 0 0px 40px rgba(252, 184, 57, 0.925); */
     background: white;
     border-radius: 10px;
 }
+
+h1 {
+    margin: 0;
+}
+
+/* .day {
+    color: black;
+} */
 
 .timeStamp {
     all: unset;
     display: block;
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.336);
+    color: rgba(0, 0, 0, 0.315);
 
     font-size: 22px;
     margin: 16px 12px;
@@ -84,10 +92,6 @@ body {
 
 .other {
     border-right: 12px solid rgb(132, 163, 151);
-}
-
-h1 {
-    margin: 0;
 }
 
 p {

@@ -6,7 +6,7 @@ const Event = ({event}) => {
     <div className={classNames( 'title', event.eventType.toLowerCase() )} id={event.time} key={event.id} >
         <h1>{event.name}</h1>
         <h2> {event.startTime.slice(0,3)} @ {event.startTime.slice(17,21)} pm</h2>
-        <p>{event.text}</p>
+        {event.text ? <p>{event.text}</p> : null}
         {event.url ? <a className="link" href={event.url} target="_blank">{event.url}</a> : null}
     </div>
   )
