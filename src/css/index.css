@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background: rgba(241, 168, 31, 0.322); */
+}
+
+:root {
+    --offset: 280px;
+}
+
+.sidenav {
+    height: 100%;
+    padding-left: 5px;
+    width: var(--offset);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.main {
+    margin-left: var(--offset);
+    padding: 20px;
+    border-left: 6px solid rgb(252, 184, 57);
+    box-shadow: 0 20px 40px rgba(252, 184, 57, 0.5);
+    background: white;
+    border-radius: 10px;
+}
+
+.timeStamp {
+    all: unset;
+    display: block;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.336);
+
+    font-size: 22px;
+    margin: 16px 12px;
+}
+
+.timeStamp:hover {
+    color: rgb(0, 0, 0);
+    margin-left: 30px;
+    transition: 0.5s;
+}
+
+.minHeading {
+    display: none;
+    margin-bottom: 30px;
+}
+
+.title {
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
+}
+
+.title:first-of-type {
+    margin-top: 0;
+}
+
+.minievent {
+    border-right: 12px solid rgb(224, 103, 107);
+}
+
+.workshop {
+    border-right: 12px solid rgb(225, 124, 75);
+}
+
+.speaker {
+    border-right: 12px solid rgb(62, 94, 145);
+}
+
+.meal {
+    border-right: 12px solid rgb(132, 35, 39);
+}
+
+.other {
+    border-right: 12px solid rgb(132, 163, 151);
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.link {
+    padding: 10px 15px;
+    background: rgb(105, 105, 180);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.link:hover {
+    color: rgb(207, 207, 226);
+    transition: 0.4s;
+}
+
+@media only screen and (max-width: 900px) {
+    .link {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .minHeading {
+        display: block;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0;
+        border-left: unset;
+        box-shadow: unset;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .link {
+        padding: 6px 10px;
+        border-radius: 5px;
+        font-size: 9px;
+        line-height: 25px;
+    }
+}
